@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grill HQ</title>
+  <meta name="description" content="Charcoal-grilled chicken with yam, potato and plantain fries, coleslaw and more.">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR (same on every page) ===== 
+   Put your pictures in this folder:
+logo.png   - your logo (then swap the LOGO placeholder in the navbar)
+hero.jpg   - big photo on the home page
+combo-1.jpg to combo-4.jpg - one picture per combo deal
+about.jpg  - photo for the About page-->
+  <header class="navbar">
+    <a href="index.html" class="brand">
+      <!-- LOGO: when you have a logo, delete the div below and use:
+           <img src="images/logo.png" alt="Grill HQ logo"> -->
+      <img src="images/logo.png" alt="Grill HQ logo">
+      <span class="brand-name">Grill HQ</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="combos.html">Combo deals</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Grilled chicken that hits the spot.</h1>
+          <p>Charcoal-grilled chicken, crispy yam, potato and plantain fries, and cool coleslaw on the side. Order
+            online and we will get it ready.</p>
+          <div class="hero-actions">
+            <a href="menu.html" class="btn">See the menu</a>
+            <a href="combos.html" class="btn btn-outline">View combo deals</a>
+          </div>
+        </div>
+        <!-- Replace with: <img src="images/hero.jpg" alt="Grilled chicken and fries"> -->
+        <img src="images/home/hero.jpg" alt="Grilled chicken and fries">
+      </div>
+    </section>
+
+    <div class="grate"></div>
+
+    <section class="section" id="deals">
+      <div class="container">
+        <h2>Combo deals</h2>
+        <p class="section-intro">A full plate at one price. Pick one and add it to your cart.</p>
+        <div class="combo-grid">
+          <article class="combo">
+            <img src="images/combo-1.jpg" alt="Solo Combo" class="photo-slot">
+            <h3>Solo Combo</h3>
+            <p>Small grilled chicken, potato fries, coleslaw, pepper sauce and a soft drink.</p>
+            <div class="combo-foot">
+              <span class="price">&#8358;5,500</span>
+              <button class="btn btn-small add-btn" data-name="Solo Combo" data-price="5500">Add to cart</button>
+            </div>
+          </article>
+          <article class="combo">
+            <img src="images/combo-2.jpg" alt="Yam and Chicken Combo" class="photo-slot">
+            <h3>Yam and Chicken Combo</h3>
+            <p>Medium grilled chicken, yam fries, pepper sauce and a soft drink.</p>
+            <div class="combo-foot">
+              <span class="price">&#8358;8,500</span>
+              <button class="btn btn-small add-btn" data-name="Yam and Chicken Combo" data-price="8500">Add to
+                cart</button>
+            </div>
+          </article>
+          <article class="combo">
+            <img src="images/combo-3.jpg" alt="Dodo Special" class="photo-slot">
+            <h3>Dodo Special</h3>
+            <p>Meduim grilled chicken, fried plantain, jollof rice and a soft drink.</p>
+            <div class="combo-foot">
+              <span class="price">&#8358;5,800</span>
+              <button class="btn btn-small add-btn" data-name="Dodo Special" data-price="5800">Add to cart</button>
+            </div>
+          </article>
+        </div>
+        <p style="margin-top:2rem"><a href="combos.html" class="btn btn-red">See all combos</a></p>
+      </div>
+    </section>
+
+    <div class="grate"></div>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Made to order, every time</h2>
+          <p>Every chicken is marinated overnight in our own pepper blend, then grilled over charcoal when you order.
+            Nothing sits under a lamp waiting for you.</p>
+          <p>Fries are cut fresh daily: yam, potato or plantain, whichever you like.</p>
+        </div>
+        <ul class="facts">
+          <li><strong>Order by WhatsApp</strong>Add items to your cart and send the order in one tap.</li>
+          <li><strong>Delivery across Lagos</strong>Delivery fee is confirmed when you send your order.</li>
+          <li><strong>Pickup</strong>Skip the wait. Order ahead and collect at our shop.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (same on every page) ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Grill HQ</h3>
+          <p style="color:var(--muted)">Charcoal-grilled chicken, crispy fries and all the sides, made fresh to order.
+          </p>
+        </div>
+        <div>
+          <h3>Visit or call</h3>
+          <ul>
+            <li>123 Any Street, Ikeja, Lagos</li>
+            <li><a href="tel:+2348000000000">0800 000 0000</a></li>
+            <li>food@grillhq.com</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Opening hours</h3>
+          <ul>
+            <li>Mon to Sat: 11am to 10pm</li>
+            <li>Sunday: 1pm to 9pm</li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy">&copy; 2026 Grill HQ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

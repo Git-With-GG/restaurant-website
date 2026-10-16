@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Grill HQ</title>
+  <meta name="description" content="Grilled chicken, fries, sides and drinks from Grill HQ.">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR (same on every page) ===== -->
+  <header class="navbar">
+    <a href="index.html" class="brand">
+      <!-- LOGO: when you have a logo, delete the div below and use:
+           <img src="images/logo.png" alt="Grill HQ logo"> -->
+      <img src="images/logo.png" alt="Grill HQ logo">
+      <span class="brand-name">Grill HQ</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="combos.html">Combo deals</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-head">
+      <h1>Our menu</h1>
+      <p>Check out from your cart when you are ready.</p>
+    </div>
+
+    <section class="menu-category" id="grilled">
+      <h2>Grills</h2>
+      <p class="section-intro">Marinated overnight, grilled over charcoal.</p>
+      <ul class="menu-list">
+        <li>
+          <img class="menu-photo" src="images/menu/small-chicken.jpg" alt="Small chicken" loading="lazy">
+          <span class="name">Small chicken</span>
+          <span class="price">&#8358;3,500</span>
+          <button class="btn btn-small add-btn" data-name="Small chicken" data-price="3500">Add</button>
+        </li>
+        <li>
+          <img class="menu-photo" src="images/menu/medium-chicken.jpg" alt="Medium chicken" loading="lazy">
+          <span class="name">Medium chicken</span>
+          <span class="price">&#8358;6,500</span>
+          <button class="btn btn-small add-btn" data-name="Medium chicken" data-price="6500">Add</button>
+        </li>
+        <li>
+          <img class="menu-photo" src="images/menu/whole-chicken.jpg" alt="Whole chicken" loading="lazy">
+          <span class="name">Whole chicken</span>
+          <span class="price">&#8358;12,500</span>
+          <button class="btn btn-small add-btn" data-name="Whole chicken" data-price="12500">Add</button>
+        </li>
+        <li>
+          <img class="menu-photo" src="images/menu/grilled-turkey.jpg" alt="Grilled turkey" loading="lazy">
+          <span class="name">Grilled turkey</span>
+          <span class="price">&#8358;5,500</span>
+          <button class="btn btn-small add-btn" data-name="Grilled turkey" data-price="5500">Add</button>
+        </li>
+        <li>
+        <li>
+          <img class="menu-photo" src="images/menu/peppered-gizzard.jpg" alt="Peppered gizzard" loading="lazy">
+          <span class="name">Peppered gizzard</span>
+          <span class="price">&#8358;2,500</span>
+          <button class="btn btn-small add-btn" data-name="Peppered gizzard" data-price="2500">Add</button>
+        </li>
+      </ul>
+    </section>
+    <section class="menu-category" id="fries">
+      <h2>Fries</h2>
+      <p class="section-intro">Cut fresh every morning and fried to order.</p>
+      <ul class="menu-list">
+        <li>
+          <img class="menu-photo" src="images/menu/yam-fries.jpg" alt="Yam fries" loading="lazy">
+          <span class="name">Yam fries</span>
+          <span class="price">&#8358;1,500</span>
+          <button class="btn btn-small add-btn" data-name="Yam fries" data-price="1500">Add</button>
+        </li>
+        <li>
+          <img class="menu-photo" src="images/menu/potato-fries.jpg" alt="Potato fries" loading="lazy">
+          <span class="name">Potato fries</span>
+          <span class="price">&#8358;1,800</span>
+          <button class="btn btn-small add-btn" data-name="Potato fries" data-price="1800">Add</button>
+        </li>
+        <li>
+          <img class="menu-photo" src="images/menu/fried-plantain.jpg" alt="Fried plantain" loading="lazy">
+          <span class="name">Fried plantain</span>
+          <span class="price">&#8358;1,200</span>
+          <button class="btn btn-small add-btn" data-name="Fried plantain" data-price="1200">Add</button>
+        </li>
+        <li>
+          <img class="menu-photo" src="images/menu/mixed-fries.jpg" alt="Mixed fries" loading="lazy">
+          <span class="name">Mixed fries<span class="desc">Yam, potato and plantain together</span></span>
+          <span class="price">&#8358;2,500</span>
+          <button class="btn btn-small add-btn" data-name="Mixed fries" data-price="2500">Add</button>
+        </li>
+      </ul>
+    </section>
+    <section class="menu-category" id="sides">
+      <h2>Sides & Sauces</h2>
+      <p class="section-intro">Add one or two to any plate.</p>
+      <ul class="menu-list">
+        <li>
+          <span class="name">Coleslaw</span>
+          <span class="price">&#8358;800</span>
+          <button class="btn btn-small add-btn" data-name="Coleslaw" data-price="800">Add</button>
+        </li>
+        <li>
+          <span class="name">Jollof rice</span>
+          <span class="price">&#8358;1,500</span>
+          <button class="btn btn-small add-btn" data-name="Jollof rice" data-price="1500">Add</button>
+        </li>
+        <li>
+          <span class="name">Moi moi</span>
+          <span class="price">&#8358;1,000</span>
+          <button class="btn btn-small add-btn" data-name="Moi moi" data-price="1000">Add</button>
+        </li>
+        <li>
+          <span class="name">Pepper sauce</span>
+          <span class="price">&#8358;500</span>
+          <button class="btn btn-small add-btn" data-name="Pepper sauce" data-price="500">Add</button>
+        </li>
+        <li>
+          <span class="name">Barbeque sauce</span>
+          <span class="price">&#8358;500</span>
+          <button class="btn btn-small add-btn" data-name="Barbeque sauce" data-price="500">Add</button>
+        </li>
+        <li>
+          <span class="name">Ketchup</span>
+          <span class="price">&#8358;500</span>
+          <button class="btn btn-small add-btn" data-name="Ketchup" data-price="500">Add</button>
+        </li>
+      </ul>
+    </section>
+    <section class="menu-category" id="drinks">
+      <h2>Drinks</h2>
+      <p class="section-intro">Cold and ready.</p>
+      <ul class="menu-list">
+        <li>
+          <img class="menu-photo" src="images/menu/zobo.jpg" alt="Zobo" loading="lazy">
+          <span class="name">Zobo</span></span>
+          <span class="price">&#8358;1,000</span>
+          <button class="btn btn-small add-btn" data-name="Zobo" data-price="1000">Add</button>
+        </li>
+        <li>
+          <img class="menu-photo" src="images/menu/chapman.jpg" alt="Chapman" loading="lazy">
+          <span class="name">Chapman</span></span>
+          <span class="price">&#8358;1,800</span>
+          <button class="btn btn-small add-btn" data-name="Chapman" data-price="1800">Add</button>
+        </li>
+        <li>
+          <img class="menu-photo" src="images/menu/sprite.jpg" alt="Sprite" loading="lazy">
+          <span class="name">Fanta</span></span>
+          <span class="price">&#8358;700</span>
+          <button class="btn btn-small add-btn" data-name="Sprite" data-price="700">Add</button>
+        </li>
+        <li>
+          <img class="menu-photo" src="images/menu/coke.jpg" alt="Coke" loading="lazy">
+          <span class="name">Fanta</span></span>
+          <span class="price">&#8358;700</span>
+          <button class="btn btn-small add-btn" data-name="Coke" data-price="700">Add</button>
+        </li>
+        <li>
+          <img class="menu-photo" src="images/menu/fanta.jpg" alt="Fanta" loading="lazy">
+          <span class="name">Fanta</span></span>
+          <span class="price">&#8358;700</span>
+          <button class="btn btn-small add-btn" data-name="Fanta" data-price="700">Add</button>
+        </li>
+        <li>
+          <img class="menu-photo" src="images/menu/bottled-water.jpg" alt="Bottled water" loading="lazy">
+          <span class="name">Bottled water<span class="desc">50cl</span></span>
+          <span class="price">&#8358;300</span>
+          <button class="btn btn-small add-btn" data-name="Bottled water" data-price="300">Add</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (same on every page) ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Grill HQ</h3>
+          <p style="color:var(--muted)">Charcoal-grilled chicken, crispy fries and all the sides, made fresh to order.
+          </p>
+        </div>
+        <div>
+          <h3>Visit or call</h3>
+          <ul>
+            <li>123 Any Street, Ikeja, Lagos</li>
+            <li><a href="tel:+2348000000000">0800 000 0000</a></li>
+            <li>food@grillhq.com</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Opening hours</h3>
+          <ul>
+            <li>Mon to Sat: 11am to 10pm</li>
+            <li>Sunday: 1pm to 9pm</li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy">&copy; 2026 Grill HQ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

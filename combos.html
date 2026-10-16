@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Combo deals | Grill HQ</title>
+  <meta name="description" content="Combo deals with grilled chicken, fries, sides and drinks.">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR (same on every page) ===== -->
+  <header class="navbar">
+    <a href="index.html" class="brand">
+      <!-- LOGO: when you have a logo, delete the div below and use:
+           <img src="images/logo.png" alt="Grill HQ logo"> -->
+      <img src="images/logo.png" alt="Grill HQ logo">
+      <span class="brand-name">Grill HQ</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="combos.html">Combo deals</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-head">
+      <h1>Combo deals</h1>
+      <p>Chicken, fries, a side and a drink at one price. Cheaper than ordering each item separately.</p>
+    </div>
+    <div class="combo-grid combo-grid-2" style="margin-bottom:3rem">
+      <article class="combo">
+        <img src="images//combos/combo-1.jpg" alt="Solo Combo" class="photo-slot">
+        <h3>Solo Combo</h3>
+        <p>Small grilled chicken, potato fries, coleslaw and a soft drink.</p>
+        <div class="combo-foot">
+          <span class="price">&#8358;5,500</span>
+          <button class="btn btn-small add-btn" data-name="Solo Combo" data-price="5500">Add to cart</button>
+        </div>
+      </article>
+      <article class="combo">
+        <img src="images//combos/combo-2.jpg" alt="Yam and Chicken Combo" class="photo-slot">
+        <h3>Yam and Chicken Combo</h3>
+        <p>Medium grilled chicken, yam fries, pepper sauce and a soft drink.</p>
+        <div class="combo-foot">
+          <span class="price">&#8358;8,500</span>
+          <button class="btn btn-small add-btn" data-name="Yam and Chicken Combo" data-price="8500">Add to cart</button>
+        </div>
+      </article>
+      <article class="combo">
+        <img src="images//combos/combo-3.jpg" alt="Dodo Special" class="photo-slot">
+        <h3>Dodo Special</h3>
+        <p>Medium grilled chicken, fried plantain, jollof rice and a soft drink.</p>
+        <div class="combo-foot">
+          <span class="price">&#8358;5,800</span>
+          <button class="btn btn-small add-btn" data-name="Dodo Special" data-price="5800">Add to cart</button>
+        </div>
+      </article>
+      <article class="combo">
+        <img src="images//combos/combo-4.jpg" alt="Family Platter" class="photo-slot">
+        <h3>Family Platter</h3>
+        <p>Whole grilled chicken, two portions of mixed fries, coleslaw and four drinks.</p>
+        <div class="combo-foot">
+          <span class="price">&#8358;22,000</span>
+          <button class="btn btn-small add-btn" data-name="Family Platter" data-price="22000">Add to cart</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER (same on every page) ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Grill HQ</h3>
+          <p style="color:var(--muted)">Charcoal-grilled chicken, crispy fries and all the sides, made fresh to order.
+          </p>
+        </div>
+        <div>
+          <h3>Visit or call</h3>
+          <ul>
+            <li>123 Any Street, Ikeja, Lagos</li>
+            <li><a href="tel:+2348000000000">0800 000 0000</a></li>
+            <li>food@grillhq.com</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Opening hours</h3>
+          <ul>
+            <li>Mon to Sat: 11am to 10pm</li>
+            <li>Sunday: 1pm to 9pm</li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy">&copy; 2026 Grill HQ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
